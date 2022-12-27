@@ -1,0 +1,41 @@
+<!-- Card -->
+<% layout('layouts/boilerplate') %>
+    <div class="row">
+        <%for (let movie of result){ %>
+
+            <div class="col-md-3">
+                <form action="/createScreening/<%=movie.m_id%>" method="get">
+                    <button type="submit">
+                <div class="card" >
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="<%=movie.m_banner%>" alt="Card image cap">
+                        <a x="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body">
+
+
+                        <h4 class="card-title">
+                            <%=movie.m_title%>
+                        </h4>
+
+                        <p class="card-text"><a href="/bookmovie/<%=movie.m_id%>">Book</a></p>
+
+
+
+                    </div>
+
+                </div>
+            </button>
+            </form>
+            </div>
+
+            <%}%>
+    </div>
+    
+
+    <!-- Card -->

@@ -1,0 +1,19 @@
+<% layout('layouts/boilerplate') %>
+<form action="/createScreening/<%=id%>" method="post">
+   
+    <select class="form-select" name="s_no" aria-label="Default select example">
+      <option selected>Screen No</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <div class="form-group">
+        <label for="exampleInputEmail1">No. of Seats</label>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter number of seats"  name="s_seats">
+      </div>
+      <div class="form-group">
+      <label for="exampleInputEmail1">Date & Time</label>
+      <input type="datetime-local" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter date and time" name="s_date">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

@@ -1,0 +1,16 @@
+<% layout('layouts/boilerplate') %>
+<form action="/addMovie" method="post">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Movie Name</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter movie name" name="m_title">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Movie Duration</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter movie duration"  name="m_duration">
+      </div>
+      <div class="form-group">
+      <label for="exampleInputEmail1">Movie Name</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter movie banner" name="m_banner">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
